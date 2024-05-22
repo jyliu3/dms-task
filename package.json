@@ -1,0 +1,24 @@
+{
+  "name": "dms-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.3.1",
+    "nexus": "^1.3.0",
+    "postgraphile": "^4.13.0"
+  }
+}

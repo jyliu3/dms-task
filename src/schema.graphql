@@ -1,0 +1,32 @@
+// Define GraphQL schema (schema.graphql)
+type Dealership {
+  id: ID!
+  name: String!
+  rooftops: [Rooftop!]!
+}
+
+type Rooftop {
+  id: ID!
+  location: String!
+  vehicles: [Vehicle!]!
+}
+
+type Vehicle {
+  id: ID!
+  make: String!
+  model: String!
+  year: Int!
+  dealershipId: ID!
+}
+
+type Customer {
+  id: ID!
+  firstName: String!
+  lastName: String!
+}
+
+type Sale {
+  id: ID!
+  customerId: ID!
+  vehicleId: ID!
+}
